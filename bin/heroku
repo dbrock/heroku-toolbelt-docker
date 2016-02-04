@@ -1,0 +1,4 @@
+#!/bin/sh
+data=heroku-`whoami` image=dbrock/heroku
+docker run --name=$data $image true 2>/dev/null
+docker run -it --rm --volumes-from=$data $image heroku "$@"

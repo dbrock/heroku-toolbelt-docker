@@ -1,9 +1,12 @@
 Run the Heroku Toolbelt inside Docker.
 
-   git clone https://github.com/dbrock/heroku-toolbelt-docker
-   cd heroku-toolbelt-docker
-   sudo make install
-   heroku login
+   $ git clone https://github.com/dbrock/heroku-toolbelt-docker
+   $ cd heroku-toolbelt-docker
+   $ sudo make install
+   $ heroku login
 
 Your credentials will be saved in an automatically-created volume
 container called `heroku-USER' (where USER is your username).
+
+This image is automatically built by Docker Hub:
+https://hub.docker.com/r/dbrock/heroku/
